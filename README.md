@@ -87,4 +87,93 @@ rnn_project/
 git clone https://github.com/votre-username/rnn-lstm-gru-analysis.git
 cd rnn-lstm-gru-analysis
 ```
-1.Créer un environnement virtuel:
+2. Créer un environnement virtuel:
+```bash
+
+python -m venv rnn_env
+source rnn_env/bin/activate  # Sur Windows: rnn_env\Scripts\activate
+```
+3. Installer les dépendances:
+```bash
+pip install -r requirements.txt
+```
+4. Configurer Jupyter pour utiliser l'environnement:
+```bash
+pip install ipykernel
+python -m ipykernel install --user --name=rnn_env --display-name="Python (rnn_env)"
+```
+📊 Utilisation
+Exécution du script principal
+```bash
+cd src
+python main.py
+```
+Utilisation du notebook Jupyter
+
+1. Lancer Jupyter Notebook:
+```bash
+ jupyter notebook
+```
+2. Ouvrir le fichier RNN_LSTM_GRU_Analysis.ipynb
+3. Sélectionner le noyau "Python (rnn_env)"
+4. Exécuter les cellules une par une
+
+📈 Résultats
+Le projet génère plusieurs résultats et visualisations:
+
+Comparaison des métriques: MSE, RMSE, MAE et R² pour chaque modèle
+Courbes d'apprentissage: Évolution des pertes pendant l'entraînement
+Comparaison des prédictions: Visualisation des prédictions vs. valeurs réelles
+Analyse des performances: Comparaison détaillée des trois architectures
+
+📚 Références
+
+Understanding LSTM Networks
+PyTorch Documentation
+Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling
+Financial Time Series Forecasting with Deep Learning
+
+## Fichier requirements.txt
+
+Voici également le contenu du fichier `requirements.txt` à inclure dans votre dépôt:
+torch==2.7.0
+numpy==2.2.5
+pandas==2.2.3
+matplotlib==3.10.1
+yfinance==0.2.58
+scikit-learn==1.6.1
+jupyter==1.0.0
+ipykernel==6.29.0
+## Comment ajouter ces fichiers à GitHub
+
+1. **Créer un nouveau dépôt GitHub** via l'interface web GitHub
+
+2. **Initialiser Git dans votre dossier local**:
+```bash
+cd rnn_project
+git init
+```
+3. Créer les fichiers README.md et requirements.txt avec le contenu fourni ci-dessus
+4. Ajouter tous les fichiers au suivi Git:
+```bash
+git add .
+```
+5. Effectuer votre premier commit:
+```bash
+   git commit -m "Premier commit: implémentation des modèles RNN, LSTM et GRU"
+```
+6. Lier votre dépôt local au dépôt GitHub:
+```bash
+  git remote add origin https://github.com/votre-username/rnn-lstm-gru-analysis.git
+
+```
+7. Pousser vos modifications:
+```bash
+git push -u origin main
+```
+
+
+
+
+
+
